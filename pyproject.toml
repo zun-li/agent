@@ -1,0 +1,17 @@
+[project]
+name = "agent"
+version = "0.1.0"
+description = "A small, local-first coding agent"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+agent = "main:main"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main", "domain"]
+packages = ["app", "adapters"]
